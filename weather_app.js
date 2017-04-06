@@ -2,7 +2,7 @@ var express =require("express");
 var http = require('http');
 
 //define a port we want to listen to
-const port=5000; 
+const port=8080; 
 const hostname = '127.0.0.1';
 //We need a function which handles requests and send response
 //function handleRequest(request, response){
@@ -40,6 +40,5 @@ var weather = require('openweather-apis');
 //start the server
 
 server.listen(port, hostname, () => {
-
   console.log(`Server running at http://${hostname}:${port}/`);
 });
